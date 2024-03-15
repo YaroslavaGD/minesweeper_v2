@@ -6,7 +6,7 @@ const CssClasses = {
   NAV: 'nav'
 }
 
-const TEXT = 'header text'
+const TEXT = 'header text';
 
 export default class HeaderView extends View{
   constructor() {
