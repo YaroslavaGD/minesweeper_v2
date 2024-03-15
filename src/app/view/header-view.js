@@ -1,4 +1,5 @@
 import ElementCreator from '../util/element-creator';
+import View from '../view/view';
 
 const CssClasses = {
   HEADER: 'header',
@@ -7,29 +8,18 @@ const CssClasses = {
 
 const TEXT = 'header text'
 
-export default class HeaderView {
+export default class HeaderView extends View{
   constructor() {
-    this.elementCreator = this.createView();
-  }
-
-  /**
-   * @returns {HTMLElement}
-   */
-  getHtmlElement() {
-    return this.elementCreator.getElement();
-  }
-
-  /**
-   * @returns {ElementCreator}
-   */
-  createView() {
+    /**
+     * @type {import('../util/element-creator').ElementParams}
+     */
     const params = {
       tag: 'header',
       classNames: [CssClasses.HEADER],
       textContent: TEXT,
       callback: null
     }
-    const elementCreator = new ElementCreator(params);
-    return elementCreator;
+    super(params);
   }
+
 }
