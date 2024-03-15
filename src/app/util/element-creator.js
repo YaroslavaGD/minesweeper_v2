@@ -7,6 +7,9 @@
  * }} ElementParams
  */
 export default class ElementCreator {
+  /**
+   * @param {ElementParams} param 
+   */
   constructor(param) {
     this.element = null;
     this.createElement(param);
@@ -33,7 +36,7 @@ export default class ElementCreator {
    * @param {Array<string>} cssClasses
    */
   setCssClasses(cssClasses) {
-    cssClasses.forEach((className) => this.element.add(className));
+    cssClasses.forEach((className) => this.element.classList.add(className));
   }
 
   /**
@@ -47,6 +50,8 @@ export default class ElementCreator {
    * @param {function} callback 
    */
   setCallback(callback) {
-    this.element.addEventListener('click', (event) => callback(event));
+    if (typeof callback === 'function') {
+      this.element.addEventListener('click', (event) => callback(event));
+    }
   }
 }
