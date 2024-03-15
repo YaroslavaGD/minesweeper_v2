@@ -1,6 +1,6 @@
 import './index.html';
 import './index.scss';
-import { mult, sum } from './modules/calc';
+import { mult, sum } from './app/calc';
 import bomb from './assets/img/bomb.svg';
 
 
