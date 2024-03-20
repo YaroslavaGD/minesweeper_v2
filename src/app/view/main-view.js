@@ -1,3 +1,4 @@
+import FieldView from "./field/field-view";
 import View from "./view";
 
 const CssClasses = {
@@ -18,5 +19,11 @@ export default class MainView extends View {
       callback: null
     }
     super(params);
+    this.configureView();
+  }
+
+  configureView() {
+    const field = new FieldView();
+    this.elementCreator.addInnerElement(field.getHtmlElement());
   }
 }
