@@ -1,0 +1,29 @@
+@import '../../../../style/var';
+.cell {
+  display: block;
+  height: $cellSize;
+  width: $cellSize;
+  margin: 0;
+  cursor: pointer;
+  background-color: transparent;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border: 0;
+}
+
+.cell--bomb {
+  background-image: url('../../../../assets/img/wolf-4-svgrepo-com.svg');
+}
+
+.cell--bomb2 {
+  background-image: url('../../../../assets/img/blackwulf.svg');
+}
+
+.cell--bomb3 {
+  background-image: url('../../../../assets/img/wulf2.svg');
+}
+
+.cell--wood {
+  background-image: url('../../../../assets/img/wood.svg');
+}

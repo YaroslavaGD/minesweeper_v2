@@ -1,0 +1,8 @@
+@import '../../../../style/var';
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(10, $cellSize);
+  grid-template-rows: repeat(10, $cellSize);
+  background-color: $back;
+}

@@ -1,5 +1,6 @@
+import './app.scss';
 import HeaderView from './view/header-view';
-import MainView from './view/main-view';
+import MainView from './view/main/main-view';
 import FooterView from './view/footer-view';
 
 export default class App {

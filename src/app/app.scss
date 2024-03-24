@@ -1,0 +1,9 @@
+@import '../libs/normalize';
+@import '../style/fonts';
+@import '../style/var';
+
+body {
+  font-family: 'Montserrat'; 
+  background-color: $back;
+  color: $text;
+}
